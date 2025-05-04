@@ -1,0 +1,15 @@
+{
+  "name": "familys_ai_site",
+  "version": "0.1.0",
+  "description": "A replica of familys9.godaddysites.com website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": ["family", "FAMILyS"],
+  "author": "",
+  "license": "MIT"
+}
