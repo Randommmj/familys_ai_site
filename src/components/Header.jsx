@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex flex-col items-center">
           <div className="text-center mb-4">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-              FAMILyS<span className="text-2xl md:text-3xl">FAMILyS</span>FAMILyS<span className="text-2xl md:text-3xl">FAMILyS</span>FAMILyS
+              FAMILyS
             </h1>
           </div>
           

@@ -12,9 +12,9 @@ module.exports = {
         accent: '#ff6600',
       },
       fontFamily: {
-        sans: ['Arial', 'sans-serif'],
+        sans: ['var(--font-roboto)', 'Roboto', 'Arial', 'sans-serif'],
       },
     },
   },
   plugins: [],
-} 
+}
