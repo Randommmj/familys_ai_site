@@ -1,10 +1,10 @@
 # familys_ai_site
 
-A replica of the familys9.godaddysites.com website built with Next.js and Tailwind CSS.
+A website for FAMILyS that shape the world with respect to legacy and coolaberation worldwidely.
 
 ## Introduction
 
-This project is a replica of the familys9.godaddysites.com website. It is built using modern web technologies and can be deployed on Vercel.
+This project helps people understand who we are and connect us better. It is built using modern web technologies and can be deployed on Vercel.
 
 ## Features
 
