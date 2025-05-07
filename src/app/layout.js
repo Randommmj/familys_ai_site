@@ -1,24 +1,19 @@
-import '@/styles/globals.css';
-import { Roboto } from 'next/font/google';
-
-const roboto = Roboto({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto',
-});
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'FAMILyS - Family Alliance for Multi-generational International LegacY and Sustainability',
   description: 'From Families For Families',
-};
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.variable}>
-      <body className="font-sans">
+    <html lang="zh-SG">
+      <head>
+        <meta name="theme-color" content="#d5cac0" />
+      </head>
+      <body className="font-raleway">
         {children}
       </body>
     </html>
-  );
+  )
 }

@@ -1,105 +1,97 @@
-'use client'
+import '../styles/FloatLabel.css'
 
-import React, { useState } from 'react'
-
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    mobile: '',
-  })
-
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      mobile: '',
-    })
-    // Show success message
-    alert('Thank you for your application!')
-  }
-
+export default function ContactForm() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12 uppercase tracking-wide">联系我们</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-2xl font-bold mb-6">联系我们</h2>
-            <h3 className="text-xl font-semibold mb-8">Contact Us</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
+            <form className="bg-gray-50 p-6 rounded-lg shadow-md">
+              <h4 className="text-xl font-bold mb-6">Contact Us</h4>
+              
+              <div className="mb-4">
+                <div className="relative">
+                  <input 
+                    type="text" 
+                    id="name" 
+                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder=" "
+                  />
+                  <label 
+                    htmlFor="name"
+                    className="absolute left-4 top-3 text-gray-600 transition-all 
+                              transform origin-left pointer-events-none"
+                  >
+                    Name
+                  </label>
+                </div>
               </div>
               
-              <div>
-                <label htmlFor="email" className="block text-gray-700 mb-2">Email*</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
+              <div className="mb-4">
+                <div className="relative">
+                  <input 
+                    type="email" 
+                    id="email" 
+                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder=" "
+                    required
+                  />
+                  <label 
+                    htmlFor="email"
+                    className="absolute left-4 top-3 text-gray-600 transition-all 
+                              transform origin-left pointer-events-none"
+                  >
+                    Email*
+                  </label>
+                </div>
               </div>
               
-              <div>
-                <label htmlFor="mobile" className="block text-gray-700 mb-2">Mobile</label>
-                <input
-                  type="text"
-                  id="mobile"
-                  name="mobile"
-                  value={formData.mobile}
-                  onChange={handleChange}
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
+              <div className="mb-4">
+                <div className="relative">
+                  <input 
+                    type="tel" 
+                    id="mobile" 
+                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder=" "
+                  />
+                  <label 
+                    htmlFor="mobile"
+                    className="absolute left-4 top-3 text-gray-600 transition-all 
+                              transform origin-left pointer-events-none"
+                  >
+                    Mobile
+                  </label>
+                </div>
               </div>
               
-              <div className="mt-6">
-                <button
-                  type="submit"
-                  className="bg-blue-600 text-white font-medium px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
-                >
-                  Apply
-                </button>
+              <div className="mb-6">
+                <textarea 
+                  id="message" 
+                  rows="6" 
+                  className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" 
+                  placeholder="I am interested in..."
+                ></textarea>
               </div>
+              
+              <button 
+                type="submit"
+                className="bg-black text-white font-bold px-8 py-3 rounded uppercase tracking-wider hover:bg-gray-800 transition duration-300 w-full"
+              >
+                Apply
+              </button>
             </form>
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-4">Please kindly share your thoughts!</h3>
+            <h4 className="text-xl font-bold mb-4">Please kindly share your thoughts!</h4>
             <p className="text-gray-700 mb-8">Connection creates values.</p>
             
-            <div className="mt-12">
-              <h3 className="text-xl font-semibold mb-4">FAMILyS</h3>
-            </div>
+            <h4 className="text-xl font-bold mb-4">FAMILyS</h4>
           </div>
         </div>
       </div>
     </section>
   )
-}
-
-export default ContactForm 
+} 
