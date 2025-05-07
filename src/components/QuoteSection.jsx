@@ -1,4 +1,7 @@
 'use client';
+
+import Image from 'next/image';
+
 export default function QuoteSection() {
   return (
     <section className="py-16 bg-gray-100">
@@ -12,11 +15,12 @@ export default function QuoteSection() {
             <hr className="border-t-2 border-gray-300 w-16 mb-6" />
             <p className="text-gray-600 font-medium">John Donne</p>
           </div>
-          <div>
-            <img 
+          <div className="relative w-full h-64 lg:h-80">
+            <Image 
               src="https://img1.wsimg.com/isteam/stock/84943/:/cr=t:0%25,l:0%25,w:100%25,h:100%25" 
               alt="Ocean Quote" 
-              className="w-full h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+              fill
+              className="object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>

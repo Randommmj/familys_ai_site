@@ -1,5 +1,4 @@
 'use client';
-import '../styles/FloatLabel.css'
 
 export default function ContactForm() {
   return (
@@ -17,13 +16,12 @@ export default function ContactForm() {
                   <input 
                     type="text" 
                     id="name" 
-                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 peer pt-6"
                     placeholder=" "
                   />
                   <label 
                     htmlFor="name"
-                    className="absolute left-4 top-3 text-gray-600 transition-all 
-                              transform origin-left pointer-events-none"
+                    className="absolute text-sm text-gray-500 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
                   >
                     Name
                   </label>
@@ -35,14 +33,13 @@ export default function ContactForm() {
                   <input 
                     type="email" 
                     id="email" 
-                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 peer pt-6"
                     placeholder=" "
                     required
                   />
                   <label 
                     htmlFor="email"
-                    className="absolute left-4 top-3 text-gray-600 transition-all 
-                              transform origin-left pointer-events-none"
+                    className="absolute text-sm text-gray-500 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
                   >
                     Email*
                   </label>
@@ -54,13 +51,12 @@ export default function ContactForm() {
                   <input 
                     type="tel" 
                     id="mobile" 
-                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 peer pt-6"
                     placeholder=" "
                   />
                   <label 
                     htmlFor="mobile"
-                    className="absolute left-4 top-3 text-gray-600 transition-all 
-                              transform origin-left pointer-events-none"
+                    className="absolute text-sm text-gray-500 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
                   >
                     Mobile
                   </label>
@@ -71,7 +67,7 @@ export default function ContactForm() {
                 <textarea 
                   id="message" 
                   rows="6" 
-                  className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" 
+                  className="w-full px-4 py-3 bg-gray-100 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" 
                   placeholder="I am interested in..."
                 ></textarea>
               </div>

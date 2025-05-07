@@ -1,4 +1,7 @@
 'use client';
+
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <div className="bg-dark-bg text-white py-16 md:py-24 relative">
@@ -15,9 +18,9 @@ export default function Hero() {
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">From Families For Families</h1>
           <p className="text-xl md:text-2xl mb-12">Family Alliance for Multi-generational International LegacY and Sustainability</p>
-          <a href="/sign-in" className="inline-block bg-transparent border-2 border-white px-8 py-3 text-white font-bold uppercase tracking-wider hover:bg-white hover:text-black transition duration-300">
+          <Link href="/sign-in" className="inline-block bg-transparent border-2 border-white px-8 py-3 text-white font-bold uppercase tracking-wider hover:bg-white hover:text-black transition duration-300">
             Sign In
-          </a>
+          </Link>
         </div>
       </div>
     </div>
