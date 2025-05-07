@@ -1,3 +1,4 @@
+'use client';
 import '../styles/FloatLabel.css'
 
 export default function ContactForm() {

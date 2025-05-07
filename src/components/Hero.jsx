@@ -1,3 +1,4 @@
+'use client';
 export default function Hero() {
   return (
     <div className="bg-dark-bg text-white py-16 md:py-24 relative">
